@@ -24,9 +24,13 @@ namespace GeneralStore_Web.Controllers
 
         public ActionResult Create()
         {
+            ViewBag.CustomerId = new SelectList(_db.Customers, "Id", "FullName");
+            ViewBag.ProductId = new SelectList(_db.Products, "Id", "Name");
+
             return View();
         }
 
+        [HttpPost]
         public ActionResult Create(Transaction transaction)
         {
             if (!ModelState.IsValid)
