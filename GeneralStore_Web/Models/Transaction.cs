@@ -17,6 +17,7 @@ namespace GeneralStore_Web.Models
         public int CustomerId { get; set; }
         public virtual Customer Customer { get; set; }
 
+        [Display(Name = "Total Cost")]
         public decimal TotalCost
         {
             get
@@ -30,6 +31,7 @@ namespace GeneralStore_Web.Models
             }
         }
 
+        [Display(Name = "Transaction Items")]
         public virtual ICollection<TransactionItem> TransactionItems { get; set; } = new List<TransactionItem>();
 
         //[ForeignKey(nameof(Product))]

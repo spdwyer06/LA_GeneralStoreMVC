@@ -19,20 +19,39 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Product.Name)
+            @Html.DisplayNameFor(model => model.TransactionItems)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Product.Name)
+            @foreach (var transactionItem in Model.TransactionItems)
+            {
+                @Html.Display(transactionItem.Product.Name + ", ")
+            }
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Quantity)
+            @Html.DisplayNameFor(model => model.TotalCost)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Quantity)
+            @Html.DisplayFor(model => model.TotalCost)
         </dd>
+
+        @*<dt>
+                @Html.DisplayNameFor(model => model.Product.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Product.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Quantity)
+            </dd>*@
 
     </dl>
 </div>
