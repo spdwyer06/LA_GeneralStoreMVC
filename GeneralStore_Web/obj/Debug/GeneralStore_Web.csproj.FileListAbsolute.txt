@@ -106,3 +106,6 @@ C:\Sean\EFA_LA\03_RedBadge\LA_GeneralStoreMVC\GeneralStore_Web\obj\Debug\General
 C:\Sean\EFA_LA\03_RedBadge\LA_GeneralStoreMVC\GeneralStore_Web\obj\Debug\GeneralStore_Web.csproj.CopyComplete
 C:\Sean\EFA_LA\03_RedBadge\LA_GeneralStoreMVC\GeneralStore_Web\obj\Debug\GeneralStore_Web.dll
 C:\Sean\EFA_LA\03_RedBadge\LA_GeneralStoreMVC\GeneralStore_Web\obj\Debug\GeneralStore_Web.pdb
+C:\Sean\EFA_LA\03_RedBadge\LA_GeneralStoreMVC\GeneralStore_Web\obj\Debug\GeneralStore_Web.Migrations.InitialCreate.resources
+C:\Sean\EFA_LA\03_RedBadge\LA_GeneralStoreMVC\GeneralStore_Web\obj\Debug\GeneralStore_Web.csproj.GenerateResource.cache
+C:\Sean\EFA_LA\03_RedBadge\LA_GeneralStoreMVC\GeneralStore_Web\obj\Debug\GeneralStore_Web.Migrations.AddTransactionItemRefactorTransaction.resources

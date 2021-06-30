@@ -17,12 +17,27 @@ namespace GeneralStore_Web.Models
         public int CustomerId { get; set; }
         public virtual Customer Customer { get; set; }
 
-        [ForeignKey(nameof(Product))]
-        [Display(Name = "Product Id")]
-        public int ProductId { get; set; }
-        public virtual Product Product { get; set; }
+        public decimal TotalCost
+        {
+            get
+            {
+                var totalCost = 0m;
 
-        [Required]
-        public int Quantity { get; set; }
+                foreach (var item in TransactionItems)
+                    totalCost += (item.Product.Price * item.Quantity);
+
+                return totalCost;
+            }
+        }
+
+        public virtual ICollection<TransactionItem> TransactionItems { get; set; } = new List<TransactionItem>();
+
+        //[ForeignKey(nameof(Product))]
+        //[Display(Name = "Product Id")]
+        //public int ProductId { get; set; }
+        //public virtual Product Product { get; set; }
+
+        //[Required]
+        //public int Quantity { get; set; }
     }
 }
